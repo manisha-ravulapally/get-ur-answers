@@ -10,7 +10,7 @@ import pickle
 
 
 
-os.environ["GOOGLE_API_KEY"] ='AIzaSyC0J8ga-xjEc-4nwFuqFE3EwH0EPVZsZuM'
+os.environ["GOOGLE_API_KEY"] ='key '
 llm = GooglePalm(google_api_key=os.environ["GOOGLE_API_KEY"], temperature=0.1)# # Initialize instructor embeddings using the Hugging Face model
 instructor_embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-large")
 vectordb_file_path = "faiss_index.pkl"
